@@ -403,9 +403,20 @@ div img{
     </div>
   </div>
 </section>
-
-
-
+<hr>
+ <!--Image Carousel-->
+ <div class="container">
+  <h2 class='center'>Our Best Sellers</h2>
+ <div class="carousel carousel-slider">
+  <a class="carousel-item" href="#"><img src="images/pot gallery 1.png"></a>
+  <a class="carousel-item" href="#"><img src="images/pot gallery 2.jpg"></a>
+  <a class="carousel-item" href="#"><img src="images/pot gallery 3.png"></a>
+  <a class="carousel-item" href="#"><img src="images/pot gallery 4.jpg"></a>
+  <a class="carousel-item" href="#"><img src="images/pot gallery 5.jpg"></a>
+  
+</div>
+</div>
+<br>
 
 
 <!--Footer-->
@@ -444,7 +455,10 @@ div img{
     $('.tooltipped').tooltip();
     $('.modal').modal();
     $('.tabs').tabs();
-   
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
 });
    </script>
 </body>
