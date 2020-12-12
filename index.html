@@ -64,7 +64,8 @@ div img{
 </head>
 <header>
   <!--Navbar-->
-    <nav class="navbar-fixed nav-wrapper grey darken-2">
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper grey darken-2">
         <div class="container">
           <a href="#" class="brand-logo">Pot-A-Party</a>
           <a href="#" class="sidenav-trigger" data-target="mobile-links">
@@ -73,19 +74,24 @@ div img{
          <ul class="right hide-on-med-and-down">
            <li><a href="#home">HOME</a></li>
            <li><a href="#about">ABOUT</a></li>
-           <li><a href="#team">OUR PRODUCTS</a></li>
+           <li><a href="#products">OUR PRODUCTS</a></li>
+           <li><a href="#deals">DEALS</a></li>
            <li><a href="#contact">CONTACT</a></li>
+           
            </ul>
         </div>
  </nav>
+  </div>
  <!--sidenav-->
  <ul class="sidenav scrollspy" id="mobile-links">
    <li><a href="#home">HOME</a></li>
    <li><a href="#about">ABOUT</a></li>
-   <li><a href="#team">OUR TEAM</a></li>
+   <li><a href="#products">OUR PRODUCTS</a></li>
+   <li><a href="#deals">DEALS</a></li>
    <li><a href="#contact">CONTACT</a></li>
+   
  </ul>
- <div class="center container">
+ <div class="center container scrollspy" id="home">
  <h1 class="center heading">Pot-A-Party</h1>
  <h2 class="center">For all your pot needs</h2>
  <hr>
@@ -132,7 +138,7 @@ div img{
   <br>
   <br>
   <div class="container center valign-center flow-text white-text">
-  <h2>About</h2>
+  <h2 class="scrollspy" id="about">About</h2>
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur provident saepe officia ut ipsam modi corrupti voluptatem, dolore eum fugit repellat cupiditate vel iure voluptatibus ullam autem quis, ducimus pariatur.</p>
  <span class="p-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur provident saepe officia </span>
 <br>
@@ -145,14 +151,14 @@ div img{
 
 <!--Cards-->
 <section class="container">
-  <h2 class="center scrollspy" >Our Products</h2>
+  <h2 class="center" >Our Products</h2>
   <hr>
   <!--first cards-->
 <div class="row">
   <div class="col s12 l6">
     <div class="card">
       <div class="card-image">
-        <img src="images/pots 5.jpg" alt="" class="responsive-img materialboxed">
+        <img src="images/pots 5.jpg" alt="" class="responsive-img materialboxed scrollspy" id="products">
       </div>
       <div class="card-content">
         <span class="card-title">Spotless Pans</span>
@@ -295,7 +301,7 @@ div img{
   <h2 class="center">Check Out Our Aamazing Deals</h2>
   <hr>
   <div class="row">
-    <div class="col s12 m4">
+    <div class="col s12 m4 scrollspy" id="deals">
       <div class="icon-block">
         <h2 class="center">$14.99</h2>
         <h5 class="center">Single Pot Set</h5>
@@ -420,10 +426,10 @@ div img{
 <br>
 <!--Contact Form-->
 <div class="container">
-  <h1 class="center scrollspy" id="contact">Contact Us Today!</h1>
+  <h1 class="center">Contact Us Today!</h1>
   <hr>
   <div class="row">
-    <div class="col s12 l5">
+    <div class="col s12 l5 scrollspy" id="contact">
       <h3 class="grey-text">We'd Love To Hear From You</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -437,6 +443,7 @@ div img{
           <label for="name">Your Name</label>
           </div>
         <div class="input-field">
+          <!--contact scrollspy is located here-->
           <i class="material-icons prefix blue-text text-darken 2">email</i>
       <input type="email" required id="email">
       <label for="email">Your Email</label>
@@ -476,12 +483,12 @@ div img{
 <footer class="page-footer grey darken-2">
   <div class="container">
     <div class="row">
-      <div class="col s12 l6">
+      <div class="col s12 l5">
         <h5>About Us</h5>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus modi atque dolorem iste.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus modi atque dolorem iste.</p>
  </div>
-<div class="col s12 l4 offset-l2">
+<div class="col s12 l3">
   <h5>Social Media</h5>
   <ul>
     <li><a href="" class="grey-text text-lighten-2">Facebook</a></li>
@@ -490,8 +497,30 @@ div img{
     <li><a href="" class="grey-text text-lighten-2">LinkedIn</a></li>
   </ul>
 </div>
+<div class="col s12 l2">
+  <h5>Support</h5>
+  <ul>
+    <li><a href="" class="grey-text text-lighten-2">Terms Of Service</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Privacy Policy</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Shipping and Delivery</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Warranty</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Return</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Support Overview</a></li>
+  </ul>
+</div>
+<div class="col s12 l2">
+<h5>Our Community</h5>
+  <ul>
+    <li><a href="" class="grey-text text-lighten-2">Facebook</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Twitter</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Instagram</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Pinterest</a></li>
+    <li><a href="" class="grey-text text-lighten-2">Google</a></li>
+    <li><a href="" class="grey-text text-lighten-2">LinkedIn</a></li>
+  </ul>
     </div>
   </div>
+</div>
   <div class="footer-copyright grey darken-4">
     <div class="container center-align">&copy; 2020 Pot-A-Party</div>
   </div>
@@ -516,6 +545,7 @@ div img{
     $('.datepicker').datepicker({
       disableWeekends: true
     });
+    $('.scrollspy').scrollSpy();
 });
    </script>
 </body>
