@@ -4,9 +4,10 @@
   <!--AOS Library-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Compiled and minified CSS -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,6 +21,11 @@
 <link rel="shortcut icon" type="image/png" href="/images/pot icon.png">
 
 <style>
+  *{
+padding:0;
+margin:0;
+
+ }
 ul li a{
   font-family: 'Playfair Display', serif;
 }
@@ -34,20 +40,21 @@ font-family: 'Quicksand', sans-serif;
 }
 div img{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/pots\ 5.jpg);
+width:100%
 }
 .shop-now{
   font-size:20px;
 }
 
 .p-text{
-  font-size:20px;
+  font-size:15px;
 }
 .back-image{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/pots\ 4.jpg);
   height: 105vh;
-    background-size: cover;
+  background-size: cover;
     background-position: center;
-    width:100%;
+    width: 100%;
 }
 .image-align{
   padding:20px;
@@ -66,6 +73,11 @@ div img{
 .pic{
   padding-top:150px;
 }
+
+body{
+  overflow-x:hidden
+  }
+
 
 </style>
 </head>
@@ -162,10 +174,10 @@ div img{
 
 <!--Cards-->
 <section class="container">
-  <h2 class="center" data-aos="fade-up">Our Products</h2>
+  <h2 class="center" data-aos="zoom-out">Our Products</h2>
   <hr>
   <!--first cards-->
-<div class="row" data-aos="slide-up"  data-aos-delay="1000">
+<div class="row" data-aos="fade-up">
   <div class="col s12 l6">
     <div class="card">
       <div class="card-image">
@@ -202,7 +214,7 @@ div img{
       </div>
       <div class="card-content">
         <span class="card-title">Perfect Pots</span>
-        <p class="truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis rerum voluptates reprehenderit sunt excepturi deleniti nemo, qui voluptate molestias similique cum ad ratione esse fugiat. Omnis libero autem animi quia!</p>
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit.reprehenderit sunt excepturi deleniti nemo, qui voluptate molestias similique cum ad ratione esse fugiat. Omnis libero autem animi quia!</p>
       </div>
       <div class="card-action">
          <!-- Modal Trigger -->
@@ -225,7 +237,7 @@ div img{
   </div>
   <!--last cards-->
 </div>
-<div class="row" data-aos="slide-up">
+<div class="row" data-aos="fade-up">
   <div class="col s12 l6">
     <div class="card">
       <div class="card-image">
@@ -288,10 +300,11 @@ div img{
 <hr>
 </section>
 <br>
+<br>
 <!--Shop Brands card-->
 <section class="products" data-aos="fade-up">
 <div class="back-image">
-<div class="row" data-aos="fade-right">
+<div class="row" data-aos="fade-left">
   <div class="col s12 l7 offset-l4 valign-center">
     <div class="card card-align">
       <div class="container image-align">
@@ -356,12 +369,12 @@ div img{
     </div>
 </section>
 <!--Tabs section-->
-<section class="container">
+<section class="container" width="100%">
  <h1 class="center" data-aos="fade-up">Or Subscribe and Get Sent Quality Pots Every Month!</h1>
  <hr>
  <br>
   <div class="row">
-    <div class="col s12 l5" data-aos="fade-right">
+    <div class="col s12 l5" data-aos="fade-right" >
 <h3>Information on Deals</h3>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercittemporibus ex amet. Sequi provident laboriosam tempore blanditiis a necessitatibus. Cumque laboriosam soluta labore facere dicta odit porro cum.</p>
   <p>Lor Quibusdam, sint qui culpa atque veritatis nesciunt et perspiciatis maxime nostrum dolorem possimus perferendis mollitia eum ab earum reprehenderit ut adipisci expedita?</p>
@@ -373,7 +386,7 @@ div img{
           <li class="tab col s3 orange-text"><a class="active" href="#test1">Option 1</a></li>
           <li class="tab col s3"><a href="#test2">Option 2</a></li>
           <li class="tab col s3"><a href="#test3">Option 3</a></li>
-          <li class="tab col s3 disabled"><a href="#test4">Coming Soon</a></li>
+          <li class="tab col s3 disabled"><a href="#test4">Coming...</a></li>
         </ul>
       </div>
       <div id="test1" class="col s12">
@@ -415,7 +428,7 @@ div img{
         </div>
         </div>
       <div id="test4" class="col s12">
-       
+      </div>
   </div>
     </div>
   </div>
@@ -555,7 +568,7 @@ div img{
     $('.modal').modal();
     $('.tabs').tabs();
     $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
+   fullWidth: true,
     indicators: true
   });
   $('#textarea2').characterCounter();
@@ -569,6 +582,7 @@ div img{
    </script>
 <!--Scroll Functions-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   
   <script>
     AOS.init({
        // offset (in px) from the original trigger point
